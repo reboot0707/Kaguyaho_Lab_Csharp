@@ -1,3 +1,4 @@
 <Solution>
-  <Project Path="Kaguyaho_Lab_Console/Kaguyaho_Lab_Console.csproj" />
+  <Project Path="Kaguyaho_Lab_Console/Kaguyaho_Lab_Console.csproj" Id="4213e681-eb00-4f49-9acc-eca9aee8d1d4" />
+  <Project Path="Kaguyaho_Lab_Form/Kaguyaho_Lab_Form.csproj" Id="1c13b89b-2371-4944-8545-ad59abd0d0e3" />
 </Solution>
