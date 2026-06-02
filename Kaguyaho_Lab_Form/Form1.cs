@@ -10,21 +10,18 @@ using System.Windows.Forms;
 
 namespace Kaguyaho_Lab_Form
 {
-    public partial class Form1 : Form
+    public partial class Form_Kaguyaho : Form
     {
-        public Form1()
+        public Form_Kaguyaho()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonHello_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            string result_yourName = text_yourName.Text;
+            MessageBox.Show(result_yourName + " Daisuki! <3");
+            //this.Close();
         }
     }
 }
