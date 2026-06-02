@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Kaguyaho_Lab_Form
+namespace Kaguyaho_Lab_Form //命名空間，可以跨越多個檔案
 {
-    public partial class Form_Kaguyaho : Form
+    public partial class Form_Kaguyaho : Form //冒號帶有「繼承」的概念, class 是類別
     {
-        public Form_Kaguyaho()
+        public Form_Kaguyaho() // 這個也是類別
         {
             InitializeComponent();
         }
