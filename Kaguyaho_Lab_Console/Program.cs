@@ -10,6 +10,7 @@ namespace Kaguyaho_Lab_Console
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Kaguyaho!!! C# dayo~");
         }
     }
 }
