@@ -78,7 +78,7 @@
             this.Controls.Add(this.text_yourName);
             this.Controls.Add(this.label_enterYourName);
             this.Controls.Add(this.button_hello);
-            this.Cursor = System.Windows.Forms.Cursors.PanWest;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.DoubleBuffered = true;
             this.Name = "Form_Kaguyaho";
             this.Text = "Kaguyaho!";
