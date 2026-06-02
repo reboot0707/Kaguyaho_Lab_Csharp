@@ -62,7 +62,7 @@
             // 
             // text_yourName
             // 
-            this.text_yourName.Font = new System.Drawing.Font("微軟正黑體", 24F);
+            this.text_yourName.Font = new System.Drawing.Font("微軟正黑體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.text_yourName.Location = new System.Drawing.Point(294, 22);
             this.text_yourName.Name = "text_yourName";
             this.text_yourName.Size = new System.Drawing.Size(241, 61);
