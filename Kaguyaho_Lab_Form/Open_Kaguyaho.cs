@@ -45,5 +45,11 @@ namespace Kaguyaho_Lab_Form
             int Age = DateTime.Now.Year - birthYear;
             return "你的年齡是.... " + Age + "歲!";
         }
+
+        private void button_yaoyaro_Click(object sender, EventArgs e)
+        {
+            Class_Tsukiyomi tsuki = new Class_Tsukiyomi();
+            tsuki.Method_Tsukiyomi_03_2();
+        }
     }
 }

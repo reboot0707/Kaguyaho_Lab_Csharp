@@ -31,6 +31,7 @@
             this.button_openform_kayuyaho = new System.Windows.Forms.Button();
             this.button_nameis168 = new System.Windows.Forms.Button();
             this.button_ageCalc = new System.Windows.Forms.Button();
+            this.button_yaoyaro = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_openform_kayuyaho
@@ -66,11 +67,23 @@
             this.button_ageCalc.UseVisualStyleBackColor = true;
             this.button_ageCalc.Click += new System.EventHandler(this.button_ageCalc_Click);
             // 
+            // button_yaoyaro
+            // 
+            this.button_yaoyaro.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_yaoyaro.Location = new System.Drawing.Point(490, 172);
+            this.button_yaoyaro.Name = "button_yaoyaro";
+            this.button_yaoyaro.Size = new System.Drawing.Size(285, 58);
+            this.button_yaoyaro.TabIndex = 3;
+            this.button_yaoyaro.Text = "Yaoyaro!!";
+            this.button_yaoyaro.UseVisualStyleBackColor = true;
+            this.button_yaoyaro.Click += new System.EventHandler(this.button_yaoyaro_Click);
+            // 
             // Open_Kaguyaho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_yaoyaro);
             this.Controls.Add(this.button_ageCalc);
             this.Controls.Add(this.button_nameis168);
             this.Controls.Add(this.button_openform_kayuyaho);
@@ -85,5 +98,6 @@
         private System.Windows.Forms.Button button_openform_kayuyaho;
         private System.Windows.Forms.Button button_nameis168;
         private System.Windows.Forms.Button button_ageCalc;
+        private System.Windows.Forms.Button button_yaoyaro;
     }
 }
