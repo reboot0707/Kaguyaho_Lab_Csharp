@@ -1,0 +1,75 @@
+﻿namespace Kaguyaho_Lab_Form
+{
+    partial class Open_Kaguyaho
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.button_openform_kayuyaho = new System.Windows.Forms.Button();
+            this.button_nameis168 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // button_openform_kayuyaho
+            // 
+            this.button_openform_kayuyaho.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_openform_kayuyaho.Location = new System.Drawing.Point(557, 364);
+            this.button_openform_kayuyaho.Name = "button_openform_kayuyaho";
+            this.button_openform_kayuyaho.Size = new System.Drawing.Size(218, 58);
+            this.button_openform_kayuyaho.TabIndex = 0;
+            this.button_openform_kayuyaho.Text = "Kagu~yaho!";
+            this.button_openform_kayuyaho.UseVisualStyleBackColor = true;
+            this.button_openform_kayuyaho.Click += new System.EventHandler(this.buttonOpenformKaguyaho_click);
+            // 
+            // button_nameis168
+            // 
+            this.button_nameis168.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_nameis168.Location = new System.Drawing.Point(557, 300);
+            this.button_nameis168.Name = "button_nameis168";
+            this.button_nameis168.Size = new System.Drawing.Size(218, 58);
+            this.button_nameis168.TabIndex = 1;
+            this.button_nameis168.Text = "168 desu...";
+            this.button_nameis168.UseVisualStyleBackColor = true;
+            this.button_nameis168.Click += new System.EventHandler(this.button_nameis168_Click);
+            // 
+            // Open_Kaguyaho
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_nameis168);
+            this.Controls.Add(this.button_openform_kayuyaho);
+            this.Name = "Open_Kaguyaho";
+            this.Text = "Open_Kaguyaho";
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button button_openform_kayuyaho;
+        private System.Windows.Forms.Button button_nameis168;
+    }
+}

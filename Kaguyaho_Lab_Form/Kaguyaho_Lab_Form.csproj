@@ -52,10 +52,19 @@
     <Compile Include="Form_Kaguyaho.Designer.cs">
       <DependentUpon>Form_Kaguyaho.cs</DependentUpon>
     </Compile>
+    <Compile Include="Open_Kaguyaho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open_Kaguyaho.Designer.cs">
+      <DependentUpon>Open_Kaguyaho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form_Kaguyaho.resx">
       <DependentUpon>Form_Kaguyaho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open_Kaguyaho.resx">
+      <DependentUpon>Open_Kaguyaho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
