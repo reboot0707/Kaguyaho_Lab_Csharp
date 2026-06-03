@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kaguyaho_Lab_Form\Kaguyaho_Lab_Form.csproj">
+      <Project>{1c13b89b-2371-4944-8545-ad59abd0d0e3}</Project>
+      <Name>Kaguyaho_Lab_Form</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

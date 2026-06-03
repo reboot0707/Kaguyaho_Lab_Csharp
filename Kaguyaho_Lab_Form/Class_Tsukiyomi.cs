@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Kaguyaho_Lab_Form
 {
-    internal class Class_Tsukiyomi
+    public class Class_Tsukiyomi
     {
         void Method_Tsukiyomi_01()
         {
