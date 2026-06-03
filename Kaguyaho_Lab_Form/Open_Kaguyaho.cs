@@ -28,10 +28,22 @@ namespace Kaguyaho_Lab_Form
             call168();
         }
 
+        private void button_ageCalc_Click(object sender, EventArgs e)
+        {
+            string resultmsg_ageCalc = ageCalc(1996);
+            MessageBox.Show(resultmsg_ageCalc);
+        }
+
         void call168()
         {
-            string IrohaName = "Joroha...";
-            MessageBox.Show( IrohaName + " Onegai~ QAQ");
+            string IrohaName = "Iroha";
+            MessageBox.Show( IrohaName + "... Onegai~ QAQ");
+        }
+
+        string ageCalc(int birthYear)
+        {
+            int Age = DateTime.Now.Year - birthYear;
+            return "你的年齡是.... " + Age + "歲!";
         }
     }
 }
