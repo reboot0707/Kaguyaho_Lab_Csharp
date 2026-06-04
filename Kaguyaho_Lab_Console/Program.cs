@@ -16,7 +16,8 @@ namespace Kaguyaho_Lab_Console
             Console.WriteLine("Kaguyaho!!! " + your_name + " dayo~");
 
             Class_Tsukiyomi tsuki = new Class_Tsukiyomi();
-            tsuki.Method_Tsukiyomi_05();
+            //tsuki.Method_Tsukiyomi_05();
+            tsuki.Method_Tsukiyomi_06();
         }
     }
 }

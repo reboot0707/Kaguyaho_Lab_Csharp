@@ -15,13 +15,13 @@ namespace Kaguyaho_Lab_Form
         }
         void Method_Tsukiyomi_01_1() 
         {
-            MessageBox.Show("Yaoyaro 01!");
+            MessageBox.Show("private Yaoyaro 01!");
             Method_Tsukiyomi_02();
 
         }
         private void Method_Tsukiyomi_02()
         {
-            MessageBox.Show("Yaoyaro 02!");
+            MessageBox.Show("private Yaoyaro 02!");
         }
 
         internal void Method_Tsukiyomi_03()
@@ -37,6 +37,11 @@ namespace Kaguyaho_Lab_Form
         public void Method_Tsukiyomi_05()
         {
             MessageBox.Show("Yaoyaro 05!");
+        }
+        public void Method_Tsukiyomi_06()
+        {
+            Method_Tsukiyomi_01();
+            Method_Tsukiyomi_02();
         }
     }
 }

@@ -51,5 +51,11 @@ namespace Kaguyaho_Lab_Form
             Class_Tsukiyomi tsuki = new Class_Tsukiyomi();
             tsuki.Method_Tsukiyomi_03_2();
         }
+
+        private void button_encaps_yaoyaro_Click(object sender, EventArgs e)
+        {
+            Class_Tsukiyomi tsuki = new Class_Tsukiyomi();
+            tsuki.Method_Tsukiyomi_06();
+        }
     }
 }
