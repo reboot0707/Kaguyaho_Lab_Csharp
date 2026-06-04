@@ -41,6 +41,7 @@
             this.button_register01 = new System.Windows.Forms.Button();
             this.button_register02 = new System.Windows.Forms.Button();
             this.button_unregisterEvent = new System.Windows.Forms.Button();
+            this.button_ifReply = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Iroha)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,11 +176,23 @@
             this.button_unregisterEvent.UseVisualStyleBackColor = true;
             this.button_unregisterEvent.Click += new System.EventHandler(this.button_unregisterEvent_Click);
             // 
+            // button_ifReply
+            // 
+            this.button_ifReply.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_ifReply.Location = new System.Drawing.Point(358, 250);
+            this.button_ifReply.Name = "button_ifReply";
+            this.button_ifReply.Size = new System.Drawing.Size(229, 49);
+            this.button_ifReply.TabIndex = 12;
+            this.button_ifReply.Text = "Reply?";
+            this.button_ifReply.UseVisualStyleBackColor = true;
+            this.button_ifReply.Click += new System.EventHandler(this.button_ifReply_Click);
+            // 
             // Open_Kaguyaho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 563);
+            this.Controls.Add(this.button_ifReply);
             this.Controls.Add(this.button_unregisterEvent);
             this.Controls.Add(this.button_register02);
             this.Controls.Add(this.button_register01);
@@ -213,5 +226,6 @@
         private System.Windows.Forms.Button button_register01;
         private System.Windows.Forms.Button button_register02;
         private System.Windows.Forms.Button button_unregisterEvent;
+        private System.Windows.Forms.Button button_ifReply;
     }
 }

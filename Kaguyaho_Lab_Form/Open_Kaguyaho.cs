@@ -115,6 +115,17 @@ namespace Kaguyaho_Lab_Form
             MessageBox.Show("Yaoyaro! Register 02");
         }
 
-       
+        private void button_ifReply_Click(object sender, EventArgs e)
+        {
+            DialogResult endType = MessageBox.Show("After Kaguya go back to the moon.  Iroha appreciates the moment with her and go back to normal life, this is the end of story.  Right?", "Happy Ending?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (endType == DialogResult.No)
+            {
+                MessageBox.Show("Find out Kaguya hime with Fuji right now!","You're fighting for Happy Ending!");
+            }
+            else
+            {
+                MessageBox.Show("Well, you're right, thx for watching Netflix :)", "The End..:p");
+            }
+        }
     }
 }
