@@ -40,6 +40,7 @@
             this.button_registerEvent = new System.Windows.Forms.Button();
             this.button_register01 = new System.Windows.Forms.Button();
             this.button_register02 = new System.Windows.Forms.Button();
+            this.button_unregisterEvent = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Iroha)).BeginInit();
             this.SuspendLayout();
             // 
@@ -146,7 +147,7 @@
             // button_register01
             // 
             this.button_register01.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_register01.Location = new System.Drawing.Point(12, 314);
+            this.button_register01.Location = new System.Drawing.Point(12, 311);
             this.button_register01.Name = "button_register01";
             this.button_register01.Size = new System.Drawing.Size(310, 49);
             this.button_register01.TabIndex = 9;
@@ -156,18 +157,29 @@
             // button_register02
             // 
             this.button_register02.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_register02.Location = new System.Drawing.Point(12, 378);
+            this.button_register02.Location = new System.Drawing.Point(12, 372);
             this.button_register02.Name = "button_register02";
             this.button_register02.Size = new System.Drawing.Size(310, 49);
             this.button_register02.TabIndex = 10;
             this.button_register02.Text = "Register 02";
             this.button_register02.UseVisualStyleBackColor = true;
             // 
+            // button_unregisterEvent
+            // 
+            this.button_unregisterEvent.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_unregisterEvent.Location = new System.Drawing.Point(12, 433);
+            this.button_unregisterEvent.Name = "button_unregisterEvent";
+            this.button_unregisterEvent.Size = new System.Drawing.Size(310, 49);
+            this.button_unregisterEvent.TabIndex = 11;
+            this.button_unregisterEvent.Text = "Unregister Event";
+            this.button_unregisterEvent.UseVisualStyleBackColor = true;
+            // 
             // Open_Kaguyaho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 563);
+            this.Controls.Add(this.button_unregisterEvent);
             this.Controls.Add(this.button_register02);
             this.Controls.Add(this.button_register01);
             this.Controls.Add(this.button_registerEvent);
@@ -199,5 +211,6 @@
         private System.Windows.Forms.Button button_registerEvent;
         private System.Windows.Forms.Button button_register01;
         private System.Windows.Forms.Button button_register02;
+        private System.Windows.Forms.Button button_unregisterEvent;
     }
 }

@@ -100,8 +100,7 @@ namespace Kaguyaho_Lab_Form
             this.button_register01.Click += new System.EventHandler(this.button_register01_Click);
             this.button_register02.Click += new System.EventHandler(this.button_register02_Click);
         }
-
-        
+       
 
         private void button_register01_Click(object sender, EventArgs e)
         {
