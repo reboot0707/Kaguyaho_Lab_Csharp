@@ -67,11 +67,27 @@ namespace Kaguyaho_Lab_Form
 
         private void button_member_Click(object sender, EventArgs e)
         {
-            Member tsukiMember = new Member();
-            tsukiMember.id = 0;
-            tsukiMember.Phone = "0987654321";
-            tsukiMember.Name = "Iroha";
-            MessageBox.Show("Yokoso! " + tsukiMember.Name + "\nYour Tsukiyomi Id is " + tsukiMember.id + "\nYour Phone Number is " + tsukiMember.Phone );
+            Member tsukiMember_168 = new Member();
+            tsukiMember_168.id = 0;
+            tsukiMember_168.Phone = "0987654321";
+            tsukiMember_168.Name = "Iroha";
+            MessageBox.Show("Yokoso! " + tsukiMember_168.Name + "\nYour Tsukiyomi Id is " + tsukiMember_168.id + "\nYour Phone Number is " + tsukiMember_168.Phone );
+
+            Member tsukiMember_kaguya = new Member()
+            {
+                id = 1,
+                Phone = "0987654322",
+                Name = "Kaguya"
+            };
+            MessageBox.Show("Yokoso! " + tsukiMember_kaguya.Name + "\nYour Tsukiyomi Id is " + tsukiMember_kaguya.id + "\nYour Phone Number is " + tsukiMember_kaguya.Phone);
+
+            Member tsukiMember_doge = new Member()
+            {
+                id = 2,
+                Phone = "0987654322",
+                Name = "Inudoge"
+            };
+            MessageBox.Show("Yokoso! " + tsukiMember_doge.Name + "\nYour Tsukiyomi Id is " + tsukiMember_doge.id + "\nYour Phone Number is " + tsukiMember_doge.Phone);
         }
 
         private void pictureBox_Iroha_Click(object sender, EventArgs e)
