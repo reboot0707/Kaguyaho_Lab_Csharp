@@ -33,6 +33,7 @@
             this.button_ageCalc = new System.Windows.Forms.Button();
             this.button_yaoyaro = new System.Windows.Forms.Button();
             this.button_encaps_yaoyaro = new System.Windows.Forms.Button();
+            this.button_partialclass = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_openform_kayuyaho
@@ -90,11 +91,23 @@
             this.button_encaps_yaoyaro.UseVisualStyleBackColor = true;
             this.button_encaps_yaoyaro.Click += new System.EventHandler(this.button_encaps_yaoyaro_Click);
             // 
+            // button_partialclass
+            // 
+            this.button_partialclass.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_partialclass.Location = new System.Drawing.Point(490, 44);
+            this.button_partialclass.Name = "button_partialclass";
+            this.button_partialclass.Size = new System.Drawing.Size(285, 58);
+            this.button_partialclass.TabIndex = 5;
+            this.button_partialclass.Text = "Partial Class";
+            this.button_partialclass.UseVisualStyleBackColor = true;
+            this.button_partialclass.Click += new System.EventHandler(this.button_partialclass_Click);
+            // 
             // Open_Kaguyaho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_partialclass);
             this.Controls.Add(this.button_encaps_yaoyaro);
             this.Controls.Add(this.button_yaoyaro);
             this.Controls.Add(this.button_ageCalc);
@@ -113,5 +126,6 @@
         private System.Windows.Forms.Button button_ageCalc;
         private System.Windows.Forms.Button button_yaoyaro;
         private System.Windows.Forms.Button button_encaps_yaoyaro;
+        private System.Windows.Forms.Button button_partialclass;
     }
 }

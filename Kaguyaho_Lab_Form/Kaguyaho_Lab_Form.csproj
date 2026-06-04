@@ -59,6 +59,7 @@
     <Compile Include="Open_Kaguyaho.Designer.cs">
       <DependentUpon>Open_Kaguyaho.cs</DependentUpon>
     </Compile>
+    <Compile Include="PartialClass_Tsukiyomi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form_Kaguyaho.resx">
