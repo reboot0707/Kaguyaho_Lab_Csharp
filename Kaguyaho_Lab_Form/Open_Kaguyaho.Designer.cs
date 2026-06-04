@@ -173,6 +173,7 @@
             this.button_unregisterEvent.TabIndex = 11;
             this.button_unregisterEvent.Text = "Unregister Event";
             this.button_unregisterEvent.UseVisualStyleBackColor = true;
+            this.button_unregisterEvent.Click += new System.EventHandler(this.button_unregisterEvent_Click);
             // 
             // Open_Kaguyaho
             // 

@@ -100,7 +100,11 @@ namespace Kaguyaho_Lab_Form
             this.button_register01.Click += new System.EventHandler(this.button_register01_Click);
             this.button_register02.Click += new System.EventHandler(this.button_register02_Click);
         }
-       
+
+        private void button_unregisterEvent_Click(object sender, EventArgs e)
+        {
+            button_register01.Click -= button_register01_Click;
+        }
 
         private void button_register01_Click(object sender, EventArgs e)
         {
@@ -110,5 +114,7 @@ namespace Kaguyaho_Lab_Form
         {
             MessageBox.Show("Yaoyaro! Register 02");
         }
+
+       
     }
 }
