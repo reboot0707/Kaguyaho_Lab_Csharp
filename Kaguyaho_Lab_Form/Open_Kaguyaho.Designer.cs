@@ -135,7 +135,7 @@
             // button_registerEvent
             // 
             this.button_registerEvent.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_registerEvent.Location = new System.Drawing.Point(12, 276);
+            this.button_registerEvent.Location = new System.Drawing.Point(12, 250);
             this.button_registerEvent.Name = "button_registerEvent";
             this.button_registerEvent.Size = new System.Drawing.Size(310, 49);
             this.button_registerEvent.TabIndex = 8;
@@ -146,7 +146,7 @@
             // button_register01
             // 
             this.button_register01.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_register01.Location = new System.Drawing.Point(12, 340);
+            this.button_register01.Location = new System.Drawing.Point(12, 314);
             this.button_register01.Name = "button_register01";
             this.button_register01.Size = new System.Drawing.Size(310, 49);
             this.button_register01.TabIndex = 9;
@@ -156,7 +156,7 @@
             // button_register02
             // 
             this.button_register02.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_register02.Location = new System.Drawing.Point(12, 404);
+            this.button_register02.Location = new System.Drawing.Point(12, 378);
             this.button_register02.Name = "button_register02";
             this.button_register02.Size = new System.Drawing.Size(310, 49);
             this.button_register02.TabIndex = 10;
