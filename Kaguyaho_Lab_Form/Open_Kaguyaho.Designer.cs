@@ -43,7 +43,7 @@
             // button_openform_kayuyaho
             // 
             this.button_openform_kayuyaho.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_openform_kayuyaho.Location = new System.Drawing.Point(490, 364);
+            this.button_openform_kayuyaho.Location = new System.Drawing.Point(613, 340);
             this.button_openform_kayuyaho.Name = "button_openform_kayuyaho";
             this.button_openform_kayuyaho.Size = new System.Drawing.Size(285, 58);
             this.button_openform_kayuyaho.TabIndex = 0;
@@ -54,7 +54,7 @@
             // button_nameis168
             // 
             this.button_nameis168.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_nameis168.Location = new System.Drawing.Point(490, 300);
+            this.button_nameis168.Location = new System.Drawing.Point(613, 276);
             this.button_nameis168.Name = "button_nameis168";
             this.button_nameis168.Size = new System.Drawing.Size(285, 58);
             this.button_nameis168.TabIndex = 1;
@@ -65,7 +65,7 @@
             // button_ageCalc
             // 
             this.button_ageCalc.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_ageCalc.Location = new System.Drawing.Point(490, 236);
+            this.button_ageCalc.Location = new System.Drawing.Point(613, 212);
             this.button_ageCalc.Name = "button_ageCalc";
             this.button_ageCalc.Size = new System.Drawing.Size(285, 58);
             this.button_ageCalc.TabIndex = 2;
@@ -76,7 +76,7 @@
             // button_yaoyaro
             // 
             this.button_yaoyaro.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_yaoyaro.Location = new System.Drawing.Point(490, 172);
+            this.button_yaoyaro.Location = new System.Drawing.Point(613, 148);
             this.button_yaoyaro.Name = "button_yaoyaro";
             this.button_yaoyaro.Size = new System.Drawing.Size(285, 58);
             this.button_yaoyaro.TabIndex = 3;
@@ -87,7 +87,7 @@
             // button_encaps_yaoyaro
             // 
             this.button_encaps_yaoyaro.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_encaps_yaoyaro.Location = new System.Drawing.Point(490, 108);
+            this.button_encaps_yaoyaro.Location = new System.Drawing.Point(613, 84);
             this.button_encaps_yaoyaro.Name = "button_encaps_yaoyaro";
             this.button_encaps_yaoyaro.Size = new System.Drawing.Size(285, 58);
             this.button_encaps_yaoyaro.TabIndex = 4;
@@ -98,7 +98,7 @@
             // button_partialclass
             // 
             this.button_partialclass.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_partialclass.Location = new System.Drawing.Point(490, 44);
+            this.button_partialclass.Location = new System.Drawing.Point(613, 20);
             this.button_partialclass.Name = "button_partialclass";
             this.button_partialclass.Size = new System.Drawing.Size(285, 58);
             this.button_partialclass.TabIndex = 5;
@@ -109,9 +109,9 @@
             // button_member
             // 
             this.button_member.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_member.Location = new System.Drawing.Point(77, 364);
+            this.button_member.Location = new System.Drawing.Point(12, 502);
             this.button_member.Name = "button_member";
-            this.button_member.Size = new System.Drawing.Size(310, 58);
+            this.button_member.Size = new System.Drawing.Size(310, 49);
             this.button_member.TabIndex = 6;
             this.button_member.Text = "Tsukiyomi Member";
             this.button_member.UseVisualStyleBackColor = true;
@@ -121,9 +121,9 @@
             // 
             this.pictureBox_Iroha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox_Iroha.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Iroha.Image")));
-            this.pictureBox_Iroha.Location = new System.Drawing.Point(48, 19);
+            this.pictureBox_Iroha.Location = new System.Drawing.Point(12, 12);
             this.pictureBox_Iroha.Name = "pictureBox_Iroha";
-            this.pictureBox_Iroha.Size = new System.Drawing.Size(368, 339);
+            this.pictureBox_Iroha.Size = new System.Drawing.Size(368, 212);
             this.pictureBox_Iroha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_Iroha.TabIndex = 7;
             this.pictureBox_Iroha.TabStop = false;
@@ -133,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(922, 563);
             this.Controls.Add(this.pictureBox_Iroha);
             this.Controls.Add(this.button_member);
             this.Controls.Add(this.button_partialclass);
