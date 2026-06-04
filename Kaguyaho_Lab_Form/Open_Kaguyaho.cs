@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -62,6 +63,20 @@ namespace Kaguyaho_Lab_Form
         {
             Class_Tsukiyomi tsuki = new Class_Tsukiyomi();
             tsuki.Method_Tsukiyomi_09();
+        }
+
+        private void button_member_Click(object sender, EventArgs e)
+        {
+            Member tsukiMember = new Member();
+            tsukiMember.id = 0;
+            tsukiMember.Phone = "0987654321";
+            tsukiMember.Name = "Iroha";
+            MessageBox.Show("Yokoso! " + tsukiMember.Name + "\nYour Tsukiyomi Id is " + tsukiMember.id + "\nYour Phone Number is " + tsukiMember.Phone );
+        }
+
+        private void pictureBox_Iroha_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.cho-kaguyahime.com/");
         }
     }
 }

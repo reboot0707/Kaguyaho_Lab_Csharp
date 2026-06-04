@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Open_Kaguyaho));
             this.button_openform_kayuyaho = new System.Windows.Forms.Button();
             this.button_nameis168 = new System.Windows.Forms.Button();
             this.button_ageCalc = new System.Windows.Forms.Button();
             this.button_yaoyaro = new System.Windows.Forms.Button();
             this.button_encaps_yaoyaro = new System.Windows.Forms.Button();
             this.button_partialclass = new System.Windows.Forms.Button();
+            this.button_member = new System.Windows.Forms.Button();
+            this.pictureBox_Iroha = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Iroha)).BeginInit();
             this.SuspendLayout();
             // 
             // button_openform_kayuyaho
@@ -102,11 +106,36 @@
             this.button_partialclass.UseVisualStyleBackColor = true;
             this.button_partialclass.Click += new System.EventHandler(this.button_partialclass_Click);
             // 
+            // button_member
+            // 
+            this.button_member.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_member.Location = new System.Drawing.Point(77, 364);
+            this.button_member.Name = "button_member";
+            this.button_member.Size = new System.Drawing.Size(310, 58);
+            this.button_member.TabIndex = 6;
+            this.button_member.Text = "Tsukiyomi Member";
+            this.button_member.UseVisualStyleBackColor = true;
+            this.button_member.Click += new System.EventHandler(this.button_member_Click);
+            // 
+            // pictureBox_Iroha
+            // 
+            this.pictureBox_Iroha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_Iroha.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Iroha.Image")));
+            this.pictureBox_Iroha.Location = new System.Drawing.Point(48, 19);
+            this.pictureBox_Iroha.Name = "pictureBox_Iroha";
+            this.pictureBox_Iroha.Size = new System.Drawing.Size(368, 339);
+            this.pictureBox_Iroha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_Iroha.TabIndex = 7;
+            this.pictureBox_Iroha.TabStop = false;
+            this.pictureBox_Iroha.Click += new System.EventHandler(this.pictureBox_Iroha_Click);
+            // 
             // Open_Kaguyaho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox_Iroha);
+            this.Controls.Add(this.button_member);
             this.Controls.Add(this.button_partialclass);
             this.Controls.Add(this.button_encaps_yaoyaro);
             this.Controls.Add(this.button_yaoyaro);
@@ -115,6 +144,7 @@
             this.Controls.Add(this.button_openform_kayuyaho);
             this.Name = "Open_Kaguyaho";
             this.Text = "Open_Kaguyaho";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Iroha)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -127,5 +157,7 @@
         private System.Windows.Forms.Button button_yaoyaro;
         private System.Windows.Forms.Button button_encaps_yaoyaro;
         private System.Windows.Forms.Button button_partialclass;
+        private System.Windows.Forms.Button button_member;
+        private System.Windows.Forms.PictureBox pictureBox_Iroha;
     }
 }
