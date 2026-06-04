@@ -42,6 +42,7 @@
             this.button_register02 = new System.Windows.Forms.Button();
             this.button_unregisterEvent = new System.Windows.Forms.Button();
             this.button_ifReply = new System.Windows.Forms.Button();
+            this.button_countKO = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Iroha)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,11 +188,23 @@
             this.button_ifReply.UseVisualStyleBackColor = true;
             this.button_ifReply.Click += new System.EventHandler(this.button_ifReply_Click);
             // 
+            // button_countKO
+            // 
+            this.button_countKO.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_countKO.Location = new System.Drawing.Point(358, 311);
+            this.button_countKO.Name = "button_countKO";
+            this.button_countKO.Size = new System.Drawing.Size(229, 87);
+            this.button_countKO.TabIndex = 13;
+            this.button_countKO.Text = "Marry Me! Kaguya";
+            this.button_countKO.UseVisualStyleBackColor = true;
+            this.button_countKO.Click += new System.EventHandler(this.button_countKO_Click);
+            // 
             // Open_Kaguyaho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 563);
+            this.Controls.Add(this.button_countKO);
             this.Controls.Add(this.button_ifReply);
             this.Controls.Add(this.button_unregisterEvent);
             this.Controls.Add(this.button_register02);
@@ -227,5 +240,6 @@
         private System.Windows.Forms.Button button_register02;
         private System.Windows.Forms.Button button_unregisterEvent;
         private System.Windows.Forms.Button button_ifReply;
+        private System.Windows.Forms.Button button_countKO;
     }
 }

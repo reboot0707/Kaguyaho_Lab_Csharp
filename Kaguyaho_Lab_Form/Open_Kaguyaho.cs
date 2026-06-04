@@ -127,5 +127,11 @@ namespace Kaguyaho_Lab_Form
                 MessageBox.Show("Well, you're right, thx for watching Netflix :)", "The End..:p");
             }
         }
+
+        private void button_countKO_Click(object sender, EventArgs e)
+        {
+            Form_countKoHits countKo = new Form_countKoHits();
+            countKo.Show();
+        }
     }
 }
