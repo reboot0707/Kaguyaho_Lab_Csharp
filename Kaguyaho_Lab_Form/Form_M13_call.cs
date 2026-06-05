@@ -51,7 +51,12 @@ namespace Kaguyaho_Lab_Form
             method_callByRealRef(ref resuleRate);
             MessageBox.Show($"resultRate: {resuleRate}");
         }
-
+        private void button_callbyOut_Click(object sender, EventArgs e)
+        {
+            Decimal R;
+            method_callByOut(out R);
+            MessageBox.Show($"R: {R}");
+        }
         public void method_callByValue(Decimal theRate)
         {
             theRate += 3.1415926535m;
@@ -70,6 +75,9 @@ namespace Kaguyaho_Lab_Form
         {
             theRate += 3.1415926535m;
         }
-
+        void method_callByOut(out Decimal theRate)
+        {
+            theRate = 1.14514191981m;
+        }
     }
 }
