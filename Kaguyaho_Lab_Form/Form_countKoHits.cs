@@ -13,6 +13,8 @@ namespace Kaguyaho_Lab_Form
     public partial class Form_countKoHits : Form
     {
         int hitCounts = 0;
+        
+        
 
         public Form_countKoHits()
         {
@@ -27,14 +29,22 @@ namespace Kaguyaho_Lab_Form
 
         private void button_ppcount_Click(object sender, EventArgs e)
         {
-            ++hitCounts;
+            //++hitCounts;
+
+            int pphitCounts = 0;
+            pphitCounts = ++hitCounts;
             label_hitCount.Text = hitCounts.ToString() + " hit(s) by IroP!";
+            label_ppcount.Text = "? = ++count -> " + pphitCounts.ToString();
         }
 
         private void button_countpp_Click(object sender, EventArgs e)
         {
-            hitCounts++;
+            //hitCounts++;
+
+            int hitCountspp = 0;
+            hitCountspp = hitCounts++;
             label_hitCount.Text = hitCounts.ToString() + " hit(s) by IroP!";
+            label_countpp.Text = "? = count++ -> " + hitCountspp.ToString();
         }
     }
 }

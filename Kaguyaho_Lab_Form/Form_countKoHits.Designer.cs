@@ -32,6 +32,8 @@
             this.button_marryMe = new System.Windows.Forms.Button();
             this.button_ppcount = new System.Windows.Forms.Button();
             this.button_countpp = new System.Windows.Forms.Button();
+            this.label_ppcount = new System.Windows.Forms.Label();
+            this.label_countpp = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label_hitCount
@@ -58,7 +60,7 @@
             // button_ppcount
             // 
             this.button_ppcount.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_ppcount.Location = new System.Drawing.Point(124, 171);
+            this.button_ppcount.Location = new System.Drawing.Point(124, 182);
             this.button_ppcount.Name = "button_ppcount";
             this.button_ppcount.Size = new System.Drawing.Size(139, 46);
             this.button_ppcount.TabIndex = 2;
@@ -69,7 +71,7 @@
             // button_countpp
             // 
             this.button_countpp.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_countpp.Location = new System.Drawing.Point(124, 233);
+            this.button_countpp.Location = new System.Drawing.Point(124, 263);
             this.button_countpp.Name = "button_countpp";
             this.button_countpp.Size = new System.Drawing.Size(139, 46);
             this.button_countpp.TabIndex = 3;
@@ -77,11 +79,31 @@
             this.button_countpp.UseVisualStyleBackColor = true;
             this.button_countpp.Click += new System.EventHandler(this.button_countpp_Click);
             // 
+            // label_ppcount
+            // 
+            this.label_ppcount.AutoSize = true;
+            this.label_ppcount.Location = new System.Drawing.Point(124, 231);
+            this.label_ppcount.Name = "label_ppcount";
+            this.label_ppcount.Size = new System.Drawing.Size(104, 15);
+            this.label_ppcount.TabIndex = 4;
+            this.label_ppcount.Text = "? = ++count -> 0";
+            // 
+            // label_countpp
+            // 
+            this.label_countpp.AutoSize = true;
+            this.label_countpp.Location = new System.Drawing.Point(124, 316);
+            this.label_countpp.Name = "label_countpp";
+            this.label_countpp.Size = new System.Drawing.Size(104, 15);
+            this.label_countpp.TabIndex = 5;
+            this.label_countpp.Text = "? = count++ -> 0";
+            // 
             // Form_countKoHits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label_countpp);
+            this.Controls.Add(this.label_ppcount);
             this.Controls.Add(this.button_countpp);
             this.Controls.Add(this.button_ppcount);
             this.Controls.Add(this.button_marryMe);
@@ -99,5 +121,7 @@
         private System.Windows.Forms.Button button_marryMe;
         private System.Windows.Forms.Button button_ppcount;
         private System.Windows.Forms.Button button_countpp;
+        private System.Windows.Forms.Label label_ppcount;
+        private System.Windows.Forms.Label label_countpp;
     }
 }
