@@ -33,6 +33,7 @@
             this.button_callbyString = new System.Windows.Forms.Button();
             this.button_callbyRealRef = new System.Windows.Forms.Button();
             this.button_callbyOut = new System.Windows.Forms.Button();
+            this.button_scoreTotal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_callByValue
@@ -85,11 +86,22 @@
             this.button_callbyOut.UseVisualStyleBackColor = true;
             this.button_callbyOut.Click += new System.EventHandler(this.button_callbyOut_Click);
             // 
+            // button_scoreTotal
+            // 
+            this.button_scoreTotal.Location = new System.Drawing.Point(346, 29);
+            this.button_scoreTotal.Name = "button_scoreTotal";
+            this.button_scoreTotal.Size = new System.Drawing.Size(193, 55);
+            this.button_scoreTotal.TabIndex = 5;
+            this.button_scoreTotal.Text = "Call \"Total Score\"";
+            this.button_scoreTotal.UseVisualStyleBackColor = true;
+            this.button_scoreTotal.Click += new System.EventHandler(this.button_scoreTotal_Click);
+            // 
             // Form_M13_call
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_scoreTotal);
             this.Controls.Add(this.button_callbyOut);
             this.Controls.Add(this.button_callbyRealRef);
             this.Controls.Add(this.button_callbyString);
@@ -108,5 +120,6 @@
         private System.Windows.Forms.Button button_callbyString;
         private System.Windows.Forms.Button button_callbyRealRef;
         private System.Windows.Forms.Button button_callbyOut;
+        private System.Windows.Forms.Button button_scoreTotal;
     }
 }

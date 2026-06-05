@@ -57,6 +57,12 @@ namespace Kaguyaho_Lab_Form
             method_callByOut(out R);
             MessageBox.Show($"R: {R}");
         }
+        private void button_scoreTotal_Click(object sender, EventArgs e)
+        {
+            string totalResult = scoreCalcTotal("數學", 11, 41, 51, 41, 91, 98, 10);
+            MessageBox.Show(totalResult);
+        }
+
         public void method_callByValue(Decimal theRate)
         {
             theRate += 3.1415926535m;
@@ -78,6 +84,15 @@ namespace Kaguyaho_Lab_Form
         void method_callByOut(out Decimal theRate)
         {
             theRate = 1.14514191981m;
+        }
+        string scoreCalcTotal(string className, params Decimal[] scoreSingle)
+        {
+            Decimal score_total = 0;
+            for (int i = 0; i < scoreSingle.Length; i++)
+            {
+                score_total += scoreSingle[i];
+            }
+            return $"{className} 的總成績: {score_total}";
         }
     }
 }
