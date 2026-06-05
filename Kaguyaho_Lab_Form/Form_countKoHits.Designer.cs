@@ -37,7 +37,14 @@
             this.groupBox_varplay = new System.Windows.Forms.GroupBox();
             this.label_playVar1 = new System.Windows.Forms.Label();
             this.button_changeVar = new System.Windows.Forms.Button();
+            this.groupBox_staticVar = new System.Windows.Forms.GroupBox();
+            this.button_staticVar = new System.Windows.Forms.Button();
+            this.label_staticVar = new System.Windows.Forms.Label();
+            this.button_nonStaticVar = new System.Windows.Forms.Button();
+            this.label_nonStaticVar = new System.Windows.Forms.Label();
+            this.button_kaguyahoStaticVar = new System.Windows.Forms.Button();
             this.groupBox_varplay.SuspendLayout();
+            this.groupBox_staticVar.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_hitCount
@@ -107,7 +114,7 @@
             this.groupBox_varplay.Controls.Add(this.label_playVar1);
             this.groupBox_varplay.Location = new System.Drawing.Point(335, 14);
             this.groupBox_varplay.Name = "groupBox_varplay";
-            this.groupBox_varplay.Size = new System.Drawing.Size(375, 232);
+            this.groupBox_varplay.Size = new System.Drawing.Size(375, 138);
             this.groupBox_varplay.TabIndex = 6;
             this.groupBox_varplay.TabStop = false;
             this.groupBox_varplay.Text = "Var Playground";
@@ -131,11 +138,74 @@
             this.button_changeVar.UseVisualStyleBackColor = true;
             this.button_changeVar.Click += new System.EventHandler(this.button_changeVar_Click);
             // 
+            // groupBox_staticVar
+            // 
+            this.groupBox_staticVar.Controls.Add(this.button_kaguyahoStaticVar);
+            this.groupBox_staticVar.Controls.Add(this.label_nonStaticVar);
+            this.groupBox_staticVar.Controls.Add(this.button_nonStaticVar);
+            this.groupBox_staticVar.Controls.Add(this.button_staticVar);
+            this.groupBox_staticVar.Controls.Add(this.label_staticVar);
+            this.groupBox_staticVar.Location = new System.Drawing.Point(335, 182);
+            this.groupBox_staticVar.Name = "groupBox_staticVar";
+            this.groupBox_staticVar.Size = new System.Drawing.Size(375, 181);
+            this.groupBox_staticVar.TabIndex = 7;
+            this.groupBox_staticVar.TabStop = false;
+            this.groupBox_staticVar.Text = "Static Var Playground";
+            // 
+            // button_staticVar
+            // 
+            this.button_staticVar.Location = new System.Drawing.Point(38, 41);
+            this.button_staticVar.Name = "button_staticVar";
+            this.button_staticVar.Size = new System.Drawing.Size(136, 23);
+            this.button_staticVar.TabIndex = 1;
+            this.button_staticVar.Text = "Static Var";
+            this.button_staticVar.UseVisualStyleBackColor = true;
+            this.button_staticVar.Click += new System.EventHandler(this.button_staticVar_Click);
+            // 
+            // label_staticVar
+            // 
+            this.label_staticVar.AutoSize = true;
+            this.label_staticVar.Location = new System.Drawing.Point(180, 45);
+            this.label_staticVar.Name = "label_staticVar";
+            this.label_staticVar.Size = new System.Drawing.Size(106, 15);
+            this.label_staticVar.TabIndex = 0;
+            this.label_staticVar.Text = "StaticVar Count: ";
+            // 
+            // button_nonStaticVar
+            // 
+            this.button_nonStaticVar.Location = new System.Drawing.Point(38, 70);
+            this.button_nonStaticVar.Name = "button_nonStaticVar";
+            this.button_nonStaticVar.Size = new System.Drawing.Size(136, 23);
+            this.button_nonStaticVar.TabIndex = 2;
+            this.button_nonStaticVar.Text = "Non Static Var";
+            this.button_nonStaticVar.UseVisualStyleBackColor = true;
+            this.button_nonStaticVar.Click += new System.EventHandler(this.button_nonStaticVar_Click);
+            // 
+            // label_nonStaticVar
+            // 
+            this.label_nonStaticVar.AutoSize = true;
+            this.label_nonStaticVar.Location = new System.Drawing.Point(180, 74);
+            this.label_nonStaticVar.Name = "label_nonStaticVar";
+            this.label_nonStaticVar.Size = new System.Drawing.Size(123, 15);
+            this.label_nonStaticVar.TabIndex = 3;
+            this.label_nonStaticVar.Text = "NoStaticVar Count: ";
+            // 
+            // button_kaguyahoStaticVar
+            // 
+            this.button_kaguyahoStaticVar.Location = new System.Drawing.Point(38, 126);
+            this.button_kaguyahoStaticVar.Name = "button_kaguyahoStaticVar";
+            this.button_kaguyahoStaticVar.Size = new System.Drawing.Size(136, 23);
+            this.button_kaguyahoStaticVar.TabIndex = 4;
+            this.button_kaguyahoStaticVar.Text = "Kaguyaho!";
+            this.button_kaguyahoStaticVar.UseVisualStyleBackColor = true;
+            this.button_kaguyahoStaticVar.Click += new System.EventHandler(this.button_kaguyahoStaticVar_Click);
+            // 
             // Form_countKoHits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox_staticVar);
             this.Controls.Add(this.groupBox_varplay);
             this.Controls.Add(this.label_countpp);
             this.Controls.Add(this.label_ppcount);
@@ -147,6 +217,8 @@
             this.Text = "Marry me! Kaguya <3";
             this.groupBox_varplay.ResumeLayout(false);
             this.groupBox_varplay.PerformLayout();
+            this.groupBox_staticVar.ResumeLayout(false);
+            this.groupBox_staticVar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +235,11 @@
         private System.Windows.Forms.GroupBox groupBox_varplay;
         private System.Windows.Forms.Label label_playVar1;
         private System.Windows.Forms.Button button_changeVar;
+        private System.Windows.Forms.GroupBox groupBox_staticVar;
+        private System.Windows.Forms.Button button_staticVar;
+        private System.Windows.Forms.Label label_staticVar;
+        private System.Windows.Forms.Label label_nonStaticVar;
+        private System.Windows.Forms.Button button_nonStaticVar;
+        private System.Windows.Forms.Button button_kaguyahoStaticVar;
     }
 }

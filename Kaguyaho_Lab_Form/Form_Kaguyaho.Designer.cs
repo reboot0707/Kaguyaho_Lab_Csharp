@@ -32,6 +32,7 @@
             this.button_hello = new System.Windows.Forms.Button();
             this.label_enterYourName = new System.Windows.Forms.Label();
             this.text_yourName = new System.Windows.Forms.TextBox();
+            this.button_countStaticVar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_hello
@@ -68,6 +69,16 @@
             this.text_yourName.Size = new System.Drawing.Size(241, 61);
             this.text_yourName.TabIndex = 2;
             // 
+            // button_countStaticVar
+            // 
+            this.button_countStaticVar.Location = new System.Drawing.Point(696, 25);
+            this.button_countStaticVar.Name = "button_countStaticVar";
+            this.button_countStaticVar.Size = new System.Drawing.Size(75, 23);
+            this.button_countStaticVar.TabIndex = 3;
+            this.button_countStaticVar.Text = "Static Var";
+            this.button_countStaticVar.UseVisualStyleBackColor = true;
+            this.button_countStaticVar.Click += new System.EventHandler(this.button_countStaticVar_Click);
+            // 
             // Form_Kaguyaho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -75,6 +86,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_countStaticVar);
             this.Controls.Add(this.text_yourName);
             this.Controls.Add(this.label_enterYourName);
             this.Controls.Add(this.button_hello);
@@ -92,6 +104,7 @@
         private System.Windows.Forms.Button button_hello;
         private System.Windows.Forms.Label label_enterYourName;
         private System.Windows.Forms.TextBox text_yourName;
+        private System.Windows.Forms.Button button_countStaticVar;
     }
 }
 

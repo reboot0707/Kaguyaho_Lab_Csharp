@@ -12,4 +12,9 @@ namespace Kaguyaho_Lab_Form
         internal string Phone;
         internal int id;
     }
+    public class LabStaticClass
+    {
+        public int NoStaticVar;       // instance屬性
+        public static int StaticVar;   // static屬性
+    }
 }

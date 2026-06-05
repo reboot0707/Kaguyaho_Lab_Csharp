@@ -48,22 +48,41 @@ namespace Kaguyaho_Lab_Form
         }
 
         int pg_x;
+        LabStaticClass lc = new LabStaticClass();
 
-        void pgMyVoid1()
-        {
-            int a = 1;
-            if (true)
-            {
-                int x = 1;
-                a = ++x;
-            }
-            pg_x = ++a;
-        }
+        //void pgMyVoid1()
+        //{
+        //    int a = 1;
+        //    if (true)
+        //    {
+        //        int x = 1;
+        //        a = ++x;
+        //    }
+        //    pg_x = ++a;
+        //}
 
         private void button_changeVar_Click(object sender, EventArgs e)
         {
-            pgMyVoid1();
+            //pgMyVoid1();
             label_playVar1.Text = "label" + pg_x.ToString();
+        }
+
+        private void button_nonStaticVar_Click(object sender, EventArgs e)
+        {
+            lc.NoStaticVar++;
+            label_nonStaticVar.Text = "NoStaticVar Count: " + lc.NoStaticVar;
+        }
+
+        private void button_staticVar_Click(object sender, EventArgs e)
+        {
+            LabStaticClass.StaticVar++;
+            label_staticVar.Text = "StaticVar Count: " + LabStaticClass.StaticVar;
+        }
+
+        private void button_kaguyahoStaticVar_Click(object sender, EventArgs e)
+        {
+            Form_Kaguyaho frm = new Form_Kaguyaho();
+            frm.Show();
         }
     }
 }

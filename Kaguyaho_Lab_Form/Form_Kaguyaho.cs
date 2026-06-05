@@ -16,5 +16,10 @@ namespace Kaguyaho_Lab_Form //命名空間，可以跨越多個檔案
             MessageBox.Show(result_yourName + " Daisuki! <3");
             //this.Close();
         }
+
+        private void button_countStaticVar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Static Var. : " + LabStaticClass.StaticVar);
+        }
     }
 }
