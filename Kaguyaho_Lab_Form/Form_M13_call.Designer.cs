@@ -37,7 +37,7 @@
             // 
             // button_callByValue
             // 
-            this.button_callByValue.Location = new System.Drawing.Point(101, 54);
+            this.button_callByValue.Location = new System.Drawing.Point(90, 29);
             this.button_callByValue.Name = "button_callByValue";
             this.button_callByValue.Size = new System.Drawing.Size(193, 55);
             this.button_callByValue.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // button_callByRef
             // 
-            this.button_callByRef.Location = new System.Drawing.Point(101, 138);
+            this.button_callByRef.Location = new System.Drawing.Point(90, 111);
             this.button_callByRef.Name = "button_callByRef";
             this.button_callByRef.Size = new System.Drawing.Size(193, 55);
             this.button_callByRef.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // button_callbyString
             // 
-            this.button_callbyString.Location = new System.Drawing.Point(101, 222);
+            this.button_callbyString.Location = new System.Drawing.Point(90, 193);
             this.button_callbyString.Name = "button_callbyString";
             this.button_callbyString.Size = new System.Drawing.Size(193, 55);
             this.button_callbyString.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // button_callbyRealRef
             // 
-            this.button_callbyRealRef.Location = new System.Drawing.Point(101, 306);
+            this.button_callbyRealRef.Location = new System.Drawing.Point(90, 275);
             this.button_callbyRealRef.Name = "button_callbyRealRef";
             this.button_callbyRealRef.Size = new System.Drawing.Size(193, 55);
             this.button_callbyRealRef.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             // button_callbyOut
             // 
-            this.button_callbyOut.Location = new System.Drawing.Point(101, 383);
+            this.button_callbyOut.Location = new System.Drawing.Point(90, 357);
             this.button_callbyOut.Name = "button_callbyOut";
             this.button_callbyOut.Size = new System.Drawing.Size(193, 55);
             this.button_callbyOut.TabIndex = 4;
