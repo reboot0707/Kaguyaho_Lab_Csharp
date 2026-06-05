@@ -20,7 +20,7 @@ namespace Kaguyaho_Lab_Form
 
         private void buttonOpenformKaguyaho_click(object sender, EventArgs e)
         {
-            Form_Kaguyaho kaguYaho  = new Form_Kaguyaho();
+            Form_Kaguyaho kaguYaho = new Form_Kaguyaho();
             kaguYaho.Show();
         }
 
@@ -38,7 +38,7 @@ namespace Kaguyaho_Lab_Form
         void call168()
         {
             string IrohaName = "Iroha";
-            MessageBox.Show( IrohaName + "... Onegai~ QAQ");
+            MessageBox.Show(IrohaName + "... Onegai~ QAQ");
         }
 
         string ageCalc(int birthYear)
@@ -71,7 +71,7 @@ namespace Kaguyaho_Lab_Form
             tsukiMember_168.id = 0;
             tsukiMember_168.Phone = "0987654321";
             tsukiMember_168.Name = "Iroha";
-            MessageBox.Show("Yokoso! " + tsukiMember_168.Name + "\nYour Tsukiyomi Id is " + tsukiMember_168.id + "\nYour Phone Number is " + tsukiMember_168.Phone );
+            MessageBox.Show("Yokoso! " + tsukiMember_168.Name + "\nYour Tsukiyomi Id is " + tsukiMember_168.id + "\nYour Phone Number is " + tsukiMember_168.Phone);
 
             Member tsukiMember_kaguya = new Member()
             {
@@ -120,7 +120,7 @@ namespace Kaguyaho_Lab_Form
             DialogResult endType = MessageBox.Show("After Kaguya go back to the moon.  Iroha appreciates the moment with her and go back to normal life, this is the end of story.  Right?", "Happy Ending?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (endType == DialogResult.No)
             {
-                MessageBox.Show("Find out Kaguya hime with Fuji right now!","You're fighting for Happy Ending!");
+                MessageBox.Show("Find out Kaguya hime with Fuji right now!", "You're fighting for Happy Ending!");
             }
             else
             {
@@ -132,6 +132,12 @@ namespace Kaguyaho_Lab_Form
         {
             Form_countKoHits countKo = new Form_countKoHits();
             countKo.Show();
+        }
+
+        private void button_callBy_Click(object sender, EventArgs e)
+        {
+            Form_M13_call f13 = new Form_M13_call();
+            f13.Show();
         }
     }
 }

@@ -43,6 +43,7 @@
             this.button_unregisterEvent = new System.Windows.Forms.Button();
             this.button_ifReply = new System.Windows.Forms.Button();
             this.button_countKO = new System.Windows.Forms.Button();
+            this.button_callBy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Iroha)).BeginInit();
             this.SuspendLayout();
             // 
@@ -199,11 +200,23 @@
             this.button_countKO.UseVisualStyleBackColor = true;
             this.button_countKO.Click += new System.EventHandler(this.button_countKO_Click);
             // 
+            // button_callBy
+            // 
+            this.button_callBy.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_callBy.Location = new System.Drawing.Point(358, 404);
+            this.button_callBy.Name = "button_callBy";
+            this.button_callBy.Size = new System.Drawing.Size(229, 87);
+            this.button_callBy.TabIndex = 14;
+            this.button_callBy.Text = "CallBy";
+            this.button_callBy.UseVisualStyleBackColor = true;
+            this.button_callBy.Click += new System.EventHandler(this.button_callBy_Click);
+            // 
             // Open_Kaguyaho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 563);
+            this.Controls.Add(this.button_callBy);
             this.Controls.Add(this.button_countKO);
             this.Controls.Add(this.button_ifReply);
             this.Controls.Add(this.button_unregisterEvent);
@@ -241,5 +254,6 @@
         private System.Windows.Forms.Button button_unregisterEvent;
         private System.Windows.Forms.Button button_ifReply;
         private System.Windows.Forms.Button button_countKO;
+        private System.Windows.Forms.Button button_callBy;
     }
 }
