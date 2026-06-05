@@ -46,7 +46,7 @@
             // 
             // button_callByRef
             // 
-            this.button_callByRef.Location = new System.Drawing.Point(101, 142);
+            this.button_callByRef.Location = new System.Drawing.Point(101, 138);
             this.button_callByRef.Name = "button_callByRef";
             this.button_callByRef.Size = new System.Drawing.Size(193, 55);
             this.button_callByRef.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             // button_callbyString
             // 
-            this.button_callbyString.Location = new System.Drawing.Point(101, 234);
+            this.button_callbyString.Location = new System.Drawing.Point(101, 222);
             this.button_callbyString.Name = "button_callbyString";
             this.button_callbyString.Size = new System.Drawing.Size(193, 55);
             this.button_callbyString.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             // button_callbyRealRef
             // 
-            this.button_callbyRealRef.Location = new System.Drawing.Point(101, 308);
+            this.button_callbyRealRef.Location = new System.Drawing.Point(101, 306);
             this.button_callbyRealRef.Name = "button_callbyRealRef";
             this.button_callbyRealRef.Size = new System.Drawing.Size(193, 55);
             this.button_callbyRealRef.TabIndex = 3;
