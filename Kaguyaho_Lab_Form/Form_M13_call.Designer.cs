@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.button_callByValue = new System.Windows.Forms.Button();
+            this.button_callByRef = new System.Windows.Forms.Button();
+            this.button_callbyString = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_callByValue
@@ -41,11 +43,33 @@
             this.button_callByValue.UseVisualStyleBackColor = true;
             this.button_callByValue.Click += new System.EventHandler(this.button_callByValue_Click);
             // 
+            // button_callByRef
+            // 
+            this.button_callByRef.Location = new System.Drawing.Point(101, 142);
+            this.button_callByRef.Name = "button_callByRef";
+            this.button_callByRef.Size = new System.Drawing.Size(193, 55);
+            this.button_callByRef.TabIndex = 1;
+            this.button_callByRef.Text = "Call by Reference";
+            this.button_callByRef.UseVisualStyleBackColor = true;
+            this.button_callByRef.Click += new System.EventHandler(this.button_callByRef_Click);
+            // 
+            // button_callbyString
+            // 
+            this.button_callbyString.Location = new System.Drawing.Point(101, 234);
+            this.button_callbyString.Name = "button_callbyString";
+            this.button_callbyString.Size = new System.Drawing.Size(193, 55);
+            this.button_callbyString.TabIndex = 2;
+            this.button_callbyString.Text = "Call by String";
+            this.button_callbyString.UseVisualStyleBackColor = true;
+            this.button_callbyString.Click += new System.EventHandler(this.button_callbyString_Click);
+            // 
             // Form_M13_call
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_callbyString);
+            this.Controls.Add(this.button_callByRef);
             this.Controls.Add(this.button_callByValue);
             this.Name = "Form_M13_call";
             this.Text = "Form_M13_call";
@@ -56,5 +80,7 @@
         #endregion
 
         private System.Windows.Forms.Button button_callByValue;
+        private System.Windows.Forms.Button button_callByRef;
+        private System.Windows.Forms.Button button_callbyString;
     }
 }
