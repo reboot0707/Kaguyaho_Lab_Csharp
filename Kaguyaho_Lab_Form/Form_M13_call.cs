@@ -43,6 +43,15 @@ namespace Kaguyaho_Lab_Form
             MessageBox.Show(myGOstring);
         }
 
+        Decimal resuleRate = 1m;
+
+        private void button_callbyRealRef_Click(object sender, EventArgs e)
+        {
+            
+            method_callByRealRef(ref resuleRate);
+            MessageBox.Show($"resultRate: {resuleRate}");
+        }
+
         public void method_callByValue(Decimal theRate)
         {
             theRate += 3.1415926535m;
@@ -56,6 +65,10 @@ namespace Kaguyaho_Lab_Form
         void method_callbyString(string inputstring)
         {
             inputstring = "是又怎樣";
+        }
+        void method_callByRealRef(ref Decimal theRate)
+        {
+            theRate += 3.1415926535m;
         }
 
     }

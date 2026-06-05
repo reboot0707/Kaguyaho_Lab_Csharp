@@ -31,6 +31,7 @@
             this.button_callByValue = new System.Windows.Forms.Button();
             this.button_callByRef = new System.Windows.Forms.Button();
             this.button_callbyString = new System.Windows.Forms.Button();
+            this.button_callbyRealRef = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_callByValue
@@ -63,11 +64,22 @@
             this.button_callbyString.UseVisualStyleBackColor = true;
             this.button_callbyString.Click += new System.EventHandler(this.button_callbyString_Click);
             // 
+            // button_callbyRealRef
+            // 
+            this.button_callbyRealRef.Location = new System.Drawing.Point(101, 308);
+            this.button_callbyRealRef.Name = "button_callbyRealRef";
+            this.button_callbyRealRef.Size = new System.Drawing.Size(193, 55);
+            this.button_callbyRealRef.TabIndex = 3;
+            this.button_callbyRealRef.Text = "Call by \"ref\"";
+            this.button_callbyRealRef.UseVisualStyleBackColor = true;
+            this.button_callbyRealRef.Click += new System.EventHandler(this.button_callbyRealRef_Click);
+            // 
             // Form_M13_call
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_callbyRealRef);
             this.Controls.Add(this.button_callbyString);
             this.Controls.Add(this.button_callByRef);
             this.Controls.Add(this.button_callByValue);
@@ -82,5 +94,6 @@
         private System.Windows.Forms.Button button_callByValue;
         private System.Windows.Forms.Button button_callByRef;
         private System.Windows.Forms.Button button_callbyString;
+        private System.Windows.Forms.Button button_callbyRealRef;
     }
 }
