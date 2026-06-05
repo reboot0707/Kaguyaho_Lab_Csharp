@@ -34,6 +34,10 @@
             this.button_countpp = new System.Windows.Forms.Button();
             this.label_ppcount = new System.Windows.Forms.Label();
             this.label_countpp = new System.Windows.Forms.Label();
+            this.groupBox_varplay = new System.Windows.Forms.GroupBox();
+            this.label_playVar1 = new System.Windows.Forms.Label();
+            this.button_changeVar = new System.Windows.Forms.Button();
+            this.groupBox_varplay.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_hitCount
@@ -97,11 +101,42 @@
             this.label_countpp.TabIndex = 5;
             this.label_countpp.Text = "? = count++ -> 0";
             // 
+            // groupBox_varplay
+            // 
+            this.groupBox_varplay.Controls.Add(this.button_changeVar);
+            this.groupBox_varplay.Controls.Add(this.label_playVar1);
+            this.groupBox_varplay.Location = new System.Drawing.Point(335, 14);
+            this.groupBox_varplay.Name = "groupBox_varplay";
+            this.groupBox_varplay.Size = new System.Drawing.Size(375, 232);
+            this.groupBox_varplay.TabIndex = 6;
+            this.groupBox_varplay.TabStop = false;
+            this.groupBox_varplay.Text = "Var Playground";
+            // 
+            // label_playVar1
+            // 
+            this.label_playVar1.AutoSize = true;
+            this.label_playVar1.Location = new System.Drawing.Point(35, 42);
+            this.label_playVar1.Name = "label_playVar1";
+            this.label_playVar1.Size = new System.Drawing.Size(41, 15);
+            this.label_playVar1.TabIndex = 0;
+            this.label_playVar1.Text = "label1";
+            // 
+            // button_changeVar
+            // 
+            this.button_changeVar.Location = new System.Drawing.Point(50, 71);
+            this.button_changeVar.Name = "button_changeVar";
+            this.button_changeVar.Size = new System.Drawing.Size(75, 23);
+            this.button_changeVar.TabIndex = 1;
+            this.button_changeVar.Text = "button1";
+            this.button_changeVar.UseVisualStyleBackColor = true;
+            this.button_changeVar.Click += new System.EventHandler(this.button_changeVar_Click);
+            // 
             // Form_countKoHits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox_varplay);
             this.Controls.Add(this.label_countpp);
             this.Controls.Add(this.label_ppcount);
             this.Controls.Add(this.button_countpp);
@@ -110,6 +145,8 @@
             this.Controls.Add(this.label_hitCount);
             this.Name = "Form_countKoHits";
             this.Text = "Marry me! Kaguya <3";
+            this.groupBox_varplay.ResumeLayout(false);
+            this.groupBox_varplay.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,5 +160,8 @@
         private System.Windows.Forms.Button button_countpp;
         private System.Windows.Forms.Label label_ppcount;
         private System.Windows.Forms.Label label_countpp;
+        private System.Windows.Forms.GroupBox groupBox_varplay;
+        private System.Windows.Forms.Label label_playVar1;
+        private System.Windows.Forms.Button button_changeVar;
     }
 }
