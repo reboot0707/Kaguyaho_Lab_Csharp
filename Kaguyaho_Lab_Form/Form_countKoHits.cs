@@ -24,5 +24,17 @@ namespace Kaguyaho_Lab_Form
             hitCounts++;
             label_hitCount.Text = hitCounts.ToString() + " hit(s) by IroP!";
         }
+
+        private void button_ppcount_Click(object sender, EventArgs e)
+        {
+            ++hitCounts;
+            label_hitCount.Text = hitCounts.ToString() + " hit(s) by IroP!";
+        }
+
+        private void button_countpp_Click(object sender, EventArgs e)
+        {
+            hitCounts++;
+            label_hitCount.Text = hitCounts.ToString() + " hit(s) by IroP!";
+        }
     }
 }

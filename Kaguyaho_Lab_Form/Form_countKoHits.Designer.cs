@@ -30,6 +30,8 @@
         {
             this.label_hitCount = new System.Windows.Forms.Label();
             this.button_marryMe = new System.Windows.Forms.Button();
+            this.button_ppcount = new System.Windows.Forms.Button();
+            this.button_countpp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_hitCount
@@ -53,11 +55,35 @@
             this.button_marryMe.UseVisualStyleBackColor = true;
             this.button_marryMe.Click += new System.EventHandler(this.button_marryMe_Click);
             // 
+            // button_ppcount
+            // 
+            this.button_ppcount.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_ppcount.Location = new System.Drawing.Point(124, 171);
+            this.button_ppcount.Name = "button_ppcount";
+            this.button_ppcount.Size = new System.Drawing.Size(139, 46);
+            this.button_ppcount.TabIndex = 2;
+            this.button_ppcount.Text = "++count";
+            this.button_ppcount.UseVisualStyleBackColor = true;
+            this.button_ppcount.Click += new System.EventHandler(this.button_ppcount_Click);
+            // 
+            // button_countpp
+            // 
+            this.button_countpp.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_countpp.Location = new System.Drawing.Point(124, 233);
+            this.button_countpp.Name = "button_countpp";
+            this.button_countpp.Size = new System.Drawing.Size(139, 46);
+            this.button_countpp.TabIndex = 3;
+            this.button_countpp.Text = "count++";
+            this.button_countpp.UseVisualStyleBackColor = true;
+            this.button_countpp.Click += new System.EventHandler(this.button_countpp_Click);
+            // 
             // Form_countKoHits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_countpp);
+            this.Controls.Add(this.button_ppcount);
             this.Controls.Add(this.button_marryMe);
             this.Controls.Add(this.label_hitCount);
             this.Name = "Form_countKoHits";
@@ -71,5 +97,7 @@
 
         private System.Windows.Forms.Label label_hitCount;
         private System.Windows.Forms.Button button_marryMe;
+        private System.Windows.Forms.Button button_ppcount;
+        private System.Windows.Forms.Button button_countpp;
     }
 }
