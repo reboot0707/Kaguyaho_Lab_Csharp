@@ -36,11 +36,15 @@
             this.button_selectDateTime = new System.Windows.Forms.Button();
             this.timer_datetime = new System.Windows.Forms.Timer(this.components);
             this.timer_blink = new System.Windows.Forms.Timer(this.components);
+            this.label_scoreGrade = new System.Windows.Forms.Label();
+            this.textBox_score = new System.Windows.Forms.TextBox();
+            this.button_calcGrade = new System.Windows.Forms.Button();
+            this.label_scoreTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button_reverse
             // 
-            this.button_reverse.Location = new System.Drawing.Point(235, 22);
+            this.button_reverse.Location = new System.Drawing.Point(47, 25);
             this.button_reverse.Name = "button_reverse";
             this.button_reverse.Size = new System.Drawing.Size(241, 125);
             this.button_reverse.TabIndex = 0;
@@ -50,7 +54,7 @@
             // 
             // button_tri
             // 
-            this.button_tri.Location = new System.Drawing.Point(235, 153);
+            this.button_tri.Location = new System.Drawing.Point(47, 156);
             this.button_tri.Name = "button_tri";
             this.button_tri.Size = new System.Drawing.Size(241, 116);
             this.button_tri.TabIndex = 1;
@@ -70,14 +74,14 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(260, 300);
+            this.dateTimePicker2.Location = new System.Drawing.Point(72, 303);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 25);
             this.dateTimePicker2.TabIndex = 4;
             // 
             // button_selectDateTime
             // 
-            this.button_selectDateTime.Location = new System.Drawing.Point(316, 331);
+            this.button_selectDateTime.Location = new System.Drawing.Point(128, 334);
             this.button_selectDateTime.Name = "button_selectDateTime";
             this.button_selectDateTime.Size = new System.Drawing.Size(75, 23);
             this.button_selectDateTime.TabIndex = 5;
@@ -96,11 +100,50 @@
             this.timer_blink.Enabled = true;
             this.timer_blink.Tick += new System.EventHandler(this.timer_blink_Tick);
             // 
+            // label_scoreGrade
+            // 
+            this.label_scoreGrade.AutoSize = true;
+            this.label_scoreGrade.Location = new System.Drawing.Point(581, 53);
+            this.label_scoreGrade.Name = "label_scoreGrade";
+            this.label_scoreGrade.Size = new System.Drawing.Size(51, 15);
+            this.label_scoreGrade.TabIndex = 6;
+            this.label_scoreGrade.Text = "__級分";
+            // 
+            // textBox_score
+            // 
+            this.textBox_score.Location = new System.Drawing.Point(452, 50);
+            this.textBox_score.Name = "textBox_score";
+            this.textBox_score.Size = new System.Drawing.Size(100, 25);
+            this.textBox_score.TabIndex = 7;
+            // 
+            // button_calcGrade
+            // 
+            this.button_calcGrade.Location = new System.Drawing.Point(461, 92);
+            this.button_calcGrade.Name = "button_calcGrade";
+            this.button_calcGrade.Size = new System.Drawing.Size(75, 23);
+            this.button_calcGrade.TabIndex = 8;
+            this.button_calcGrade.Text = "計算";
+            this.button_calcGrade.UseVisualStyleBackColor = true;
+            this.button_calcGrade.Click += new System.EventHandler(this.button_calcGrade_Click);
+            // 
+            // label_scoreTitle
+            // 
+            this.label_scoreTitle.AutoSize = true;
+            this.label_scoreTitle.Location = new System.Drawing.Point(405, 53);
+            this.label_scoreTitle.Name = "label_scoreTitle";
+            this.label_scoreTitle.Size = new System.Drawing.Size(41, 15);
+            this.label_scoreTitle.TabIndex = 9;
+            this.label_scoreTitle.Text = "分數:";
+            // 
             // Form18_ifelse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label_scoreTitle);
+            this.Controls.Add(this.button_calcGrade);
+            this.Controls.Add(this.textBox_score);
+            this.Controls.Add(this.label_scoreGrade);
             this.Controls.Add(this.button_selectDateTime);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label_dateTime);
@@ -122,5 +165,9 @@
         private System.Windows.Forms.Button button_selectDateTime;
         private System.Windows.Forms.Timer timer_datetime;
         private System.Windows.Forms.Timer timer_blink;
+        private System.Windows.Forms.Label label_scoreGrade;
+        private System.Windows.Forms.TextBox textBox_score;
+        private System.Windows.Forms.Button button_calcGrade;
+        private System.Windows.Forms.Label label_scoreTitle;
     }
 }

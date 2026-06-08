@@ -62,5 +62,34 @@ namespace Kaguyaho_Lab_Form
                 flag = !flag;
             }
         }
+
+        private void button_calcGrade_Click(object sender, EventArgs e)
+        {
+            float score_num = float.Parse(textBox_score.Text);
+            if (score_num <= 100 && score_num >= 90)
+            {
+                label_scoreGrade.Text = "ㄅ級分";
+            }
+            else if (score_num < 90 && score_num >= 80)
+            {
+                label_scoreGrade.Text = "ㄆ級分";
+            }
+            else if (score_num < 80 && score_num >= 70)
+            {
+                label_scoreGrade.Text = "ㄇ級分";
+            }
+            else if (score_num < 70 && score_num >= 60)
+            {
+                label_scoreGrade.Text = "ㄈ級分";
+            }
+            else if (score_num < 60 && score_num >= 0)
+            {
+                label_scoreGrade.Text = "ㄦ級分/拉完了";
+            }
+            else
+            {
+                label_scoreGrade.Text = "Please Try Again";
+            }
+        }
     }
 }
