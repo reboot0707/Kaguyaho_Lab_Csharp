@@ -17,4 +17,10 @@ namespace Kaguyaho_Lab_Form
         public int NoStaticVar;       // instance屬性
         public static int StaticVar;   // static屬性
     }
+
+    public struct Product
+    {
+        public string Name;
+        public decimal Price;
+    }
 }

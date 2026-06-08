@@ -71,6 +71,12 @@
     <Compile Include="Form_M15_enum.Designer.cs">
       <DependentUpon>Form_M15_enum.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_M15_struct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_M15_struct.Designer.cs">
+      <DependentUpon>Form_M15_struct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Open_Kaguyaho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_M15_enum.resx">
       <DependentUpon>Form_M15_enum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_M15_struct.resx">
+      <DependentUpon>Form_M15_struct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Open_Kaguyaho.resx">
       <DependentUpon>Open_Kaguyaho.cs</DependentUpon>
