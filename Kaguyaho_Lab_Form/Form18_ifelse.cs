@@ -65,31 +65,64 @@ namespace Kaguyaho_Lab_Form
 
         private void button_calcGrade_Click(object sender, EventArgs e)
         {
-            float score_num = float.Parse(textBox_score.Text);
-            if (score_num <= 100 && score_num >= 90)
+            float score_num = 0;
+            if (float.TryParse(textBox_score.Text, out score_num))
             {
-                label_scoreGrade.Text = "ㄅ級分";
-            }
-            else if (score_num < 90 && score_num >= 80)
-            {
-                label_scoreGrade.Text = "ㄆ級分";
-            }
-            else if (score_num < 80 && score_num >= 70)
-            {
-                label_scoreGrade.Text = "ㄇ級分";
-            }
-            else if (score_num < 70 && score_num >= 60)
-            {
-                label_scoreGrade.Text = "ㄈ級分";
-            }
-            else if (score_num < 60 && score_num >= 0)
-            {
-                label_scoreGrade.Text = "ㄦ級分/拉完了";
+                if (score_num <= 100 && score_num >= 90)
+                {
+                    label_scoreGrade.Text = "ㄅ級分";
+                }
+                else if (score_num < 90 && score_num >= 80)
+                {
+                    label_scoreGrade.Text = "ㄆ級分";
+                }
+                else if (score_num < 80 && score_num >= 70)
+                {
+                    label_scoreGrade.Text = "ㄇ級分";
+                }
+                else if (score_num < 70 && score_num >= 60)
+                {
+                    label_scoreGrade.Text = "ㄈ級分";
+                }
+                else if (score_num < 60 && score_num >= 0)
+                {
+                    label_scoreGrade.Text = "ㄦ級分/拉完了";
+                }
+                else
+                {
+                    label_scoreGrade.Text = "Please Try Again";
+                }
             }
             else
             {
-                label_scoreGrade.Text = "Please Try Again";
+                DialogResult msg_result = MessageBox.Show("數字是會不會打?", "?????", MessageBoxButtons.YesNo);
+                switch (msg_result)
+                {
+                    case DialogResult.Yes:
+                        MessageBox.Show("會打? 回去給我好好重打");
+                        break;
+                    case DialogResult.No:
+                        MessageBox.Show("不會打? 不會要問!");
+                        break;
+                    default:
+                        MessageBox.Show("不知道自己會不會? 不管, 還是要問!");
+                        break;
+                }
+                textBox_score.Text = "";
+                textBox_score.Focus();
             }
+        }
+
+        private void button_practiceWhile_MouseClick(object sender, MouseEventArgs e)
+        {
+            int test_num = 0;
+            string test_result = "";
+            while (test_num < 10)
+            {
+                test_result += test_num.ToString() +"\n";
+                test_num++;
+            }
+            MessageBox.Show(test_result);
         }
     }
 }
