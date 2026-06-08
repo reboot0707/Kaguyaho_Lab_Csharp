@@ -23,6 +23,18 @@ namespace Kaguyaho_Lab_Form
 
         private void button_save_Click(object sender, EventArgs e)
         {
+            decimal price = 0;
+            bool isSuccess = decimal.TryParse(textBox_price.Text, out price);
+
+            if (!isSuccess)
+            {
+                MessageBox.Show("請以數字輸入正確的金額!!!");
+                textBox_price.Text = "";
+                //textBox_price.Clear();
+                textBox_price.Focus();
+                return;
+            }
+            
             Product pro = new Product(textBox_productName.Text, decimal.Parse(textBox_price.Text));
             //pro.Name = textBox_productName.Text;
             //pro.Price = decimal.Parse(textBox_price.Text);
