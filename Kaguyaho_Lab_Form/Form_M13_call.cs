@@ -94,5 +94,16 @@ namespace Kaguyaho_Lab_Form
             }
             return $"{className} 的總成績: {score_total}";
         }
+        string scoreCalcTotal_while(string className, params Decimal[] scoreSingle)
+        {
+            Decimal score_total = 0;
+            int i = 0;
+            while (i < scoreSingle.Length)
+            {
+                score_total += scoreSingle[i];
+                i++;
+            }
+            return $"{className} 的總成績: {score_total}";
+        }
     }
 }
