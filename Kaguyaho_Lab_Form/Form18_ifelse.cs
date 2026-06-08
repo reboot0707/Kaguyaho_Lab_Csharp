@@ -115,13 +115,26 @@ namespace Kaguyaho_Lab_Form
 
         private void button_practiceWhile_MouseClick(object sender, MouseEventArgs e)
         {
-            int test_num = 0;
+            int test_num = 10;
             string test_result = "";
             while (test_num < 10)
             {
                 test_result += test_num.ToString() +"\n";
                 test_num++;
             }
+            MessageBox.Show(test_result);
+        }
+
+        private void button_doloop_MouseClick(object sender, MouseEventArgs e)
+        {
+            int test_num = 10;
+            string test_result = "";
+            do
+            {
+                test_result += test_num.ToString() + "\n";
+                test_num++;
+            }
+            while (test_num < 10);
             MessageBox.Show(test_result);
         }
     }

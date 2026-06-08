@@ -41,6 +41,7 @@
             this.button_calcGrade = new System.Windows.Forms.Button();
             this.label_scoreTitle = new System.Windows.Forms.Label();
             this.button_practiceWhile = new System.Windows.Forms.Button();
+            this.button_doloop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_reverse
@@ -146,11 +147,22 @@
             this.button_practiceWhile.UseVisualStyleBackColor = true;
             this.button_practiceWhile.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button_practiceWhile_MouseClick);
             // 
+            // button_doloop
+            // 
+            this.button_doloop.Location = new System.Drawing.Point(408, 232);
+            this.button_doloop.Name = "button_doloop";
+            this.button_doloop.Size = new System.Drawing.Size(242, 55);
+            this.button_doloop.TabIndex = 11;
+            this.button_doloop.Text = "練習Do迴圈";
+            this.button_doloop.UseVisualStyleBackColor = true;
+            this.button_doloop.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button_doloop_MouseClick);
+            // 
             // Form18_ifelse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_doloop);
             this.Controls.Add(this.button_practiceWhile);
             this.Controls.Add(this.label_scoreTitle);
             this.Controls.Add(this.button_calcGrade);
@@ -182,5 +194,6 @@
         private System.Windows.Forms.Button button_calcGrade;
         private System.Windows.Forms.Label label_scoreTitle;
         private System.Windows.Forms.Button button_practiceWhile;
+        private System.Windows.Forms.Button button_doloop;
     }
 }
