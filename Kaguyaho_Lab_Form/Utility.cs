@@ -20,7 +20,16 @@ namespace Kaguyaho_Lab_Form
 
     public struct Product
     {
-        public string Name;
-        public decimal Price;
+        //public string Name;
+        //public decimal Price;
+
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+
+        public Product(string ProductName, decimal ProductPrice)
+        {
+            Name = ProductName;
+            Price = ProductPrice;
+        }
     }
 }

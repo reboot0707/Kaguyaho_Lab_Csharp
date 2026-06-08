@@ -18,19 +18,25 @@ namespace Kaguyaho_Lab_Form
         }
 
         private string _result = "產品\n";
+        private int _count = 0;
+        private decimal _total = 0;
 
         private void button_save_Click(object sender, EventArgs e)
         {
-            Product pro;
-            pro.Name = textBox_productName.Text;
-            pro.Price = decimal.Parse(textBox_price.Text);
+            Product pro = new Product(textBox_productName.Text, decimal.Parse(textBox_price.Text));
+            //pro.Name = textBox_productName.Text;
+            //pro.Price = decimal.Parse(textBox_price.Text);
 
+            _count ++;
+            _total += pro.Price;
             _result += $"名稱: {pro.Name}, 單價: {pro.Price}\n";
         }
 
         private void button_show_Click(object sender, EventArgs e)
         {
-            label_productList.Text = _result;
+            // 產品數量 平均單價
+            label_productList.Text = $"{_result}------------------" +
+                $"\n產品數量: {_count}, 平均單價: {_total / _count}";
         }
     }
 }
