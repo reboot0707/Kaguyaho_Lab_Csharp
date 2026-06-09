@@ -102,6 +102,9 @@
     <EmbeddedResource Include="Form18_ifelse.resx">
       <DependentUpon>Form18_ifelse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form19_array.resx">
+      <DependentUpon>Form19_array.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_countKoHits.resx">
       <DependentUpon>Form_countKoHits.cs</DependentUpon>
     </EmbeddedResource>
