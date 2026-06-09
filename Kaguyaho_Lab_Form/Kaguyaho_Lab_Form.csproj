@@ -53,6 +53,12 @@
     <Compile Include="Form18_ifelse.Designer.cs">
       <DependentUpon>Form18_ifelse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form19_array.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form19_array.Designer.cs">
+      <DependentUpon>Form19_array.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_countKoHits.cs">
       <SubType>Form</SubType>
     </Compile>
