@@ -13,7 +13,11 @@ namespace Kaguyaho_Lab_Form
     public partial class Form18_ifelse : Form
     {
 
-        DateTime myPickDateTime = DateTime.Now;
+        DateTime myPickDateTime = new DateTime
+        (
+            2038, 1, 19, 3, 14, 8,
+            DateTimeKind.Utc
+        );
 
         public Form18_ifelse()
         {
@@ -136,6 +140,19 @@ namespace Kaguyaho_Lab_Form
             }
             while (test_num < 10);
             MessageBox.Show(test_result);
+        }
+
+        private void button_forloop_Click(object sender, EventArgs e)
+        {
+            string test_for_result = "";
+            for (int i = 0; i < 10; i++)
+            {
+                if(i % 2 == 1)
+                { 
+                    test_for_result += i + "\n";
+                }
+            }
+            MessageBox.Show(test_for_result);
         }
     }
 }

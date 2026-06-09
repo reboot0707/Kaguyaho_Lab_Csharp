@@ -42,6 +42,7 @@
             this.label_scoreTitle = new System.Windows.Forms.Label();
             this.button_practiceWhile = new System.Windows.Forms.Button();
             this.button_doloop = new System.Windows.Forms.Button();
+            this.button_forloop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_reverse
@@ -157,11 +158,22 @@
             this.button_doloop.UseVisualStyleBackColor = true;
             this.button_doloop.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button_doloop_MouseClick);
             // 
+            // button_forloop
+            // 
+            this.button_forloop.Location = new System.Drawing.Point(408, 303);
+            this.button_forloop.Name = "button_forloop";
+            this.button_forloop.Size = new System.Drawing.Size(242, 55);
+            this.button_forloop.TabIndex = 12;
+            this.button_forloop.Text = "練習For迴圈";
+            this.button_forloop.UseVisualStyleBackColor = true;
+            this.button_forloop.Click += new System.EventHandler(this.button_forloop_Click);
+            // 
             // Form18_ifelse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_forloop);
             this.Controls.Add(this.button_doloop);
             this.Controls.Add(this.button_practiceWhile);
             this.Controls.Add(this.label_scoreTitle);
@@ -195,5 +207,6 @@
         private System.Windows.Forms.Label label_scoreTitle;
         private System.Windows.Forms.Button button_practiceWhile;
         private System.Windows.Forms.Button button_doloop;
+        private System.Windows.Forms.Button button_forloop;
     }
 }
