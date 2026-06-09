@@ -123,7 +123,7 @@ namespace Kaguyaho_Lab_Form
             string test_result = "";
             while (test_num < 10)
             {
-                test_result += test_num.ToString() +"\n";
+                test_result += test_num.ToString() + "\n";
                 test_num++;
             }
             MessageBox.Show(test_result);
@@ -145,14 +145,89 @@ namespace Kaguyaho_Lab_Form
         private void button_forloop_Click(object sender, EventArgs e)
         {
             string test_for_result = "";
-            for (int i = 0; i < 10; i++)
+            for (int i = 0, j = 1; i < 100; i = j)
             {
-                if(i % 2 == 1)
-                { 
-                    test_for_result += i + "\n";
-                }
+                test_for_result += $"i: {i}, j: {j}, i+j: {i + j}\n";
+                j = i + j;
             }
             MessageBox.Show(test_for_result);
+        }
+
+        private void button_foreachloop_Click(object sender, EventArgs e)
+        {
+            int[] score_multi = { 11, 41, 5, 14, 191, 98, 10 };
+            string print_result = "";
+            foreach (int score in score_multi)
+            {
+                print_result += score.ToString();
+            }
+            MessageBox.Show(print_result);
+        }
+
+        bool test_control_flag = false;
+
+        private void button_controlloop_Click(object sender, EventArgs e)
+        {
+            foreach (Control item in this.Controls)
+            {
+                //if(  !(item is  Button))
+                // {
+                //     continue;
+                // }
+
+                if (item.GetType() != typeof(Button))
+                {
+                    continue;
+                }
+
+
+                if (test_control_flag == true)
+                {
+                    item.BackColor = Color.Black;
+                    item.ForeColor = Color.White;
+                }
+                else
+                {
+                    item.BackColor = Color.White;
+                    item.ForeColor = Color.Black;
+                }
+                //item.Left += 5;
+                //item.Top -= 5;
+
+            }
+            test_control_flag = !test_control_flag;
+        }
+
+        private void timer_control_Tick(object sender, EventArgs e)
+        {
+            foreach (Control item in this.Controls)
+            {
+                //if(  !(item is  Button))
+                // {
+                //     continue;
+                // }
+
+                if (item.GetType() != typeof(Button))
+                {
+                    continue;
+                }
+
+
+                if (test_control_flag == true)
+                {
+                    item.BackColor = Color.Black;
+                    item.ForeColor = Color.White;
+                }
+                else
+                {
+                    item.BackColor = Color.White;
+                    item.ForeColor = Color.Black;
+                }
+                //item.Left += 5;
+                //item.Top -= 5;
+
+            }
+            test_control_flag = !test_control_flag;
         }
     }
 }

@@ -43,6 +43,9 @@
             this.button_practiceWhile = new System.Windows.Forms.Button();
             this.button_doloop = new System.Windows.Forms.Button();
             this.button_forloop = new System.Windows.Forms.Button();
+            this.button_foreachloop = new System.Windows.Forms.Button();
+            this.button_controlloop = new System.Windows.Forms.Button();
+            this.timer_control = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // button_reverse
@@ -140,7 +143,7 @@
             // 
             // button_practiceWhile
             // 
-            this.button_practiceWhile.Location = new System.Drawing.Point(408, 156);
+            this.button_practiceWhile.Location = new System.Drawing.Point(408, 126);
             this.button_practiceWhile.Name = "button_practiceWhile";
             this.button_practiceWhile.Size = new System.Drawing.Size(242, 55);
             this.button_practiceWhile.TabIndex = 10;
@@ -150,7 +153,7 @@
             // 
             // button_doloop
             // 
-            this.button_doloop.Location = new System.Drawing.Point(408, 232);
+            this.button_doloop.Location = new System.Drawing.Point(408, 202);
             this.button_doloop.Name = "button_doloop";
             this.button_doloop.Size = new System.Drawing.Size(242, 55);
             this.button_doloop.TabIndex = 11;
@@ -160,7 +163,7 @@
             // 
             // button_forloop
             // 
-            this.button_forloop.Location = new System.Drawing.Point(408, 303);
+            this.button_forloop.Location = new System.Drawing.Point(408, 273);
             this.button_forloop.Name = "button_forloop";
             this.button_forloop.Size = new System.Drawing.Size(242, 55);
             this.button_forloop.TabIndex = 12;
@@ -168,11 +171,38 @@
             this.button_forloop.UseVisualStyleBackColor = true;
             this.button_forloop.Click += new System.EventHandler(this.button_forloop_Click);
             // 
+            // button_foreachloop
+            // 
+            this.button_foreachloop.Location = new System.Drawing.Point(408, 344);
+            this.button_foreachloop.Name = "button_foreachloop";
+            this.button_foreachloop.Size = new System.Drawing.Size(242, 55);
+            this.button_foreachloop.TabIndex = 13;
+            this.button_foreachloop.Text = "練習ForEach迴圈";
+            this.button_foreachloop.UseVisualStyleBackColor = true;
+            this.button_foreachloop.Click += new System.EventHandler(this.button_foreachloop_Click);
+            // 
+            // button_controlloop
+            // 
+            this.button_controlloop.Location = new System.Drawing.Point(292, 383);
+            this.button_controlloop.Name = "button_controlloop";
+            this.button_controlloop.Size = new System.Drawing.Size(92, 55);
+            this.button_controlloop.TabIndex = 14;
+            this.button_controlloop.Text = "練習迴圈control";
+            this.button_controlloop.UseVisualStyleBackColor = true;
+            this.button_controlloop.Click += new System.EventHandler(this.button_controlloop_Click);
+            // 
+            // timer_control
+            // 
+            this.timer_control.Interval = 500;
+            this.timer_control.Tick += new System.EventHandler(this.timer_control_Tick);
+            // 
             // Form18_ifelse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_controlloop);
+            this.Controls.Add(this.button_foreachloop);
             this.Controls.Add(this.button_forloop);
             this.Controls.Add(this.button_doloop);
             this.Controls.Add(this.button_practiceWhile);
@@ -208,5 +238,8 @@
         private System.Windows.Forms.Button button_practiceWhile;
         private System.Windows.Forms.Button button_doloop;
         private System.Windows.Forms.Button button_forloop;
+        private System.Windows.Forms.Button button_foreachloop;
+        private System.Windows.Forms.Button button_controlloop;
+        private System.Windows.Forms.Timer timer_control;
     }
 }
