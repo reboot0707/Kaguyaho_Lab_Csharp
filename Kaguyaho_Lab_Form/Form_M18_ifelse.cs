@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Kaguyaho_Lab_Form
 {
-    public partial class Form18_ifelse : Form
+    public partial class Form_M18_ifelse : Form
     {
 
         DateTime myPickDateTime = new DateTime
@@ -19,7 +19,7 @@ namespace Kaguyaho_Lab_Form
             DateTimeKind.Utc
         );
 
-        public Form18_ifelse()
+        public Form_M18_ifelse()
         {
             InitializeComponent();
             label_dateTime.Text = $"{DateTime.Now:yyyy年MM月dd日 HH點mm分ss秒}";

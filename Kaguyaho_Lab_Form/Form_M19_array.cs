@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Kaguyaho_Lab_Form
 {
-    public partial class Form19_array : Form
+    public partial class Form_M19_array : Form
     {
-        public Form19_array()
+        public Form_M19_array()
         {
             InitializeComponent();
         }

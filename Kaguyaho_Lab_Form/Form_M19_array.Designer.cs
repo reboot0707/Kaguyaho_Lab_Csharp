@@ -1,6 +1,6 @@
 ﻿namespace Kaguyaho_Lab_Form
 {
-    partial class Form19_array
+    partial class Form_M19_array
     {
         /// <summary>
         /// Required designer variable.

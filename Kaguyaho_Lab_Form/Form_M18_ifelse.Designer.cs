@@ -1,6 +1,6 @@
 ﻿namespace Kaguyaho_Lab_Form
 {
-    partial class Form18_ifelse
+    partial class Form_M18_ifelse
     {
         /// <summary>
         /// Required designer variable.

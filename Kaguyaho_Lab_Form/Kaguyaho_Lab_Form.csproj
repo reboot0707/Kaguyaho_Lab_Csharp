@@ -47,17 +47,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class_Tsukiyomi.cs" />
-    <Compile Include="Form18_ifelse.cs">
+    <Compile Include="Form_M18_ifelse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form18_ifelse.Designer.cs">
-      <DependentUpon>Form18_ifelse.cs</DependentUpon>
+    <Compile Include="Form_M18_ifelse.Designer.cs">
+      <DependentUpon>Form_M18_ifelse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form19_array.cs">
+    <Compile Include="Form_M19_array.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form19_array.Designer.cs">
-      <DependentUpon>Form19_array.cs</DependentUpon>
+    <Compile Include="Form_M19_array.Designer.cs">
+      <DependentUpon>Form_M19_array.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_countKoHits.cs">
       <SubType>Form</SubType>
@@ -117,11 +117,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility.cs" />
-    <EmbeddedResource Include="Form18_ifelse.resx">
-      <DependentUpon>Form18_ifelse.cs</DependentUpon>
+    <EmbeddedResource Include="Form_M18_ifelse.resx">
+      <DependentUpon>Form_M18_ifelse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form19_array.resx">
-      <DependentUpon>Form19_array.cs</DependentUpon>
+    <EmbeddedResource Include="Form_M19_array.resx">
+      <DependentUpon>Form_M19_array.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_countKoHits.resx">
       <DependentUpon>Form_countKoHits.cs</DependentUpon>
