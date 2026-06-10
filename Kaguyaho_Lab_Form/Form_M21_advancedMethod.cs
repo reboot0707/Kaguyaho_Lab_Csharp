@@ -17,27 +17,34 @@ namespace Kaguyaho_Lab_Form
             InitializeComponent();
         }
 
-        void Swap(ref int a, ref int b)
-        {
-            int T = a;
-            a = b;
-            b = T;
-        }
+        //void Swap(ref int a, ref int b)
+        //{
+        //    int T = a;
+        //    a = b;
+        //    b = T;
+        //}
 
-        void Swap(ref double a, ref double b)
+        //void Swap(ref double a, ref double b)
+        //{
+        //    double T = a;
+        //    a = b;
+        //    b = T;
+        //}
+
+        static void Swap<myType>(ref myType iA, ref myType iB)
         {
-            double T = a;
-            a = b;
-            b = T;
+            myType temp = iA;
+            iA = iB;
+            iB = temp;
         }
 
         private void button_overloadInt_Click(object sender, EventArgs e)
         {
             int intA = 114, intB = 514;
-            string result = $"A: {intA}, B: {intB}";
+            string result = $"A: {intA}, B: {intB}\n";
 
             Swap (ref intA, ref intB);
-            result += $"A: {intA}, B: {intB}";
+            result += $"A: {intA}, B: {intB}\n";
 
             MessageBox.Show(result);
         }
@@ -49,6 +56,11 @@ namespace Kaguyaho_Lab_Form
 
             Swap(ref intA, ref intB);
             result += $"A: {intA}, B: {intB}\n";
+
+            string strA = "春日影", strB = "為何要演奏";
+            Swap(ref strA, ref strB);
+            Swap(ref strA, ref strB);
+            result += $"{strA}{strB}??????\n";
 
             MessageBox.Show(result);
         }
