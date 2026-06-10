@@ -30,6 +30,7 @@
         {
             this.button_trigArray = new System.Windows.Forms.Button();
             this.button_testArray2 = new System.Windows.Forms.Button();
+            this.button_arrayRandom = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_trigArray
@@ -52,11 +53,22 @@
             this.button_testArray2.UseVisualStyleBackColor = true;
             this.button_testArray2.Click += new System.EventHandler(this.button_testArray2_Click);
             // 
+            // button_arrayRandom
+            // 
+            this.button_arrayRandom.Location = new System.Drawing.Point(450, 289);
+            this.button_arrayRandom.Name = "button_arrayRandom";
+            this.button_arrayRandom.Size = new System.Drawing.Size(293, 149);
+            this.button_arrayRandom.TabIndex = 2;
+            this.button_arrayRandom.Text = "test Random Array";
+            this.button_arrayRandom.UseVisualStyleBackColor = true;
+            this.button_arrayRandom.Click += new System.EventHandler(this.button_arrayRandom_Click);
+            // 
             // Form19_array
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_arrayRandom);
             this.Controls.Add(this.button_testArray2);
             this.Controls.Add(this.button_trigArray);
             this.Name = "Form19_array";
@@ -69,5 +81,6 @@
 
         private System.Windows.Forms.Button button_trigArray;
         private System.Windows.Forms.Button button_testArray2;
+        private System.Windows.Forms.Button button_arrayRandom;
     }
 }

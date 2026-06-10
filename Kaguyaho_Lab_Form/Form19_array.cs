@@ -79,5 +79,29 @@ namespace Kaguyaho_Lab_Form
 
             MessageBox.Show(result);
         }
+
+        private void button_arrayRandom_Click(object sender, EventArgs e)
+        {
+            int[] resultArr = randArrayMethod(38);
+
+            string result = "";
+            foreach (int loop_item in resultArr)
+            {
+                result += loop_item + "\n";
+            }
+            MessageBox.Show(result);
+        }
+
+        int[] randArrayMethod(int array_length)
+        {
+            int[] arr = new int[array_length];
+
+            Random r = new Random();
+            for (int i = 0; i < array_length; i++)
+            {
+                arr[i] = r.Next(48763);
+            }
+            return arr;
+        }
     }
 }
