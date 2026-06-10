@@ -16,7 +16,7 @@ namespace Kaguyaho_Lab_Form
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_M21_advancedMethod());
+            Application.Run(new Form_M22_GenericList());
         }
     }
 }
